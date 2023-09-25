@@ -1,0 +1,15 @@
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\bin\Debug\net7.0\Acme.BookStore.Application.Contracts.deps.json
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\bin\Debug\net7.0\Acme.BookStore.Application.Contracts.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\bin\Debug\net7.0\Acme.BookStore.Application.Contracts.pdb
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\bin\Debug\net7.0\Acme.BookStore.Domain.Shared.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\bin\Debug\net7.0\Acme.BookStore.Domain.Shared.pdb
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\Acme.BookStore.Application.Contracts.csproj.AssemblyReference.cache
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\Acme.BookStore.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\Acme.BookStore.Application.Contracts.AssemblyInfoInputs.cache
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\Acme.BookStore.Application.Contracts.AssemblyInfo.cs
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\Acme.BookStore.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\Acme.BookStore.Application.Contracts.csproj.CopyComplete
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\Acme.BookStore.Application.Contracts.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\refint\Acme.BookStore.Application.Contracts.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\Acme.BookStore.Application.Contracts.pdb
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Application.Contracts\obj\Debug\net7.0\ref\Acme.BookStore.Application.Contracts.dll

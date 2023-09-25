@@ -1,0 +1,17 @@
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\bin\Debug\net7.0\Acme.BookStore.HttpApi.Client.deps.json
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\bin\Debug\net7.0\Acme.BookStore.HttpApi.Client.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\bin\Debug\net7.0\Acme.BookStore.HttpApi.Client.pdb
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\bin\Debug\net7.0\Acme.BookStore.Application.Contracts.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\bin\Debug\net7.0\Acme.BookStore.Domain.Shared.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\bin\Debug\net7.0\Acme.BookStore.Application.Contracts.pdb
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\bin\Debug\net7.0\Acme.BookStore.Domain.Shared.pdb
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\Acme.BookStore.HttpApi.Client.csproj.AssemblyReference.cache
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\Acme.BookStore.HttpApi.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\Acme.BookStore.HttpApi.Client.AssemblyInfoInputs.cache
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\Acme.BookStore.HttpApi.Client.AssemblyInfo.cs
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\Acme.BookStore.HttpApi.Client.csproj.CoreCompileInputs.cache
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\Acme.BookStore.HttpApi.Client.csproj.CopyComplete
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\Acme.BookStore.HttpApi.Client.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\refint\Acme.BookStore.HttpApi.Client.dll
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\Acme.BookStore.HttpApi.Client.pdb
+C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Client\obj\Debug\net7.0\ref\Acme.BookStore.HttpApi.Client.dll

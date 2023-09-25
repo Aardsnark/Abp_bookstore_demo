@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Io3rUqYkuAK6//OMuqbIKV2BBcYT/srFFQSNAit20QI=",
+  "Source": "Acme.BookStore.HttpApi.Host",
+  "BasePath": "_content/Acme.BookStore.HttpApi.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
