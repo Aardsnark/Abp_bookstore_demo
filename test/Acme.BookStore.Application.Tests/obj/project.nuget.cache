@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rZf+STiensuxMPJQPS18ClP7LbVxGI9Ki33MhL7cwTnwLuW4IVozFTwx+xeZnGZi+S1dJ5XXHVGg5c3YvNGLmQ==",
+  "dgSpecHash": "APLTDbusrrsshJ2C/PGcAuW3+uyzsw+5oqRVRru4GM6s9u9Mi49wcjKOGzSXu/iBegeET0WLyKWlNuIFMM+naQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\test\\Acme.BookStore.Application.Tests\\Acme.BookStore.Application.Tests.csproj",
   "expectedPackageFiles": [

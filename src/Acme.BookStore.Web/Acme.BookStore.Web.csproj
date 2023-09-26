@@ -51,11 +51,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Pages\Books\app-proxy.js" />
+    <None Remove="Pages\Authors\app-proxy.js" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Pages\app-proxy.js">
+    <Content Include="Pages\Authors\app-proxy.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Pages\Books\app-proxy.js">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

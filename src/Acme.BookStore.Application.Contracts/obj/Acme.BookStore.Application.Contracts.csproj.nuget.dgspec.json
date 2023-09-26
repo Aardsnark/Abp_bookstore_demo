@@ -11,7 +11,7 @@
         "projectName": "Acme.BookStore.Application.Contracts",
         "projectPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Application.Contracts\\Acme.BookStore.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.BookStore\\src\\Acme.BookStore.Application.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

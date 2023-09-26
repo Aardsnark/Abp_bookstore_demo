@@ -11,7 +11,7 @@
         "projectName": "Acme.BookStore.Application.Contracts",
         "projectPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Application.Contracts\\Acme.BookStore.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.BookStore\\src\\Acme.BookStore.Application.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -532,7 +532,7 @@
         "projectName": "Acme.BookStore.Domain",
         "projectPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Domain\\Acme.BookStore.Domain.csproj",
         "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.BookStore\\src\\Acme.BookStore.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\NuGet.Config",
@@ -634,7 +634,7 @@
         "projectName": "Acme.BookStore.EntityFrameworkCore",
         "projectPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.EntityFrameworkCore\\Acme.BookStore.EntityFrameworkCore.csproj",
         "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.BookStore\\src\\Acme.BookStore.EntityFrameworkCore\\obj\\",
+        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.EntityFrameworkCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\NuGet.Config",

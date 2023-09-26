@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pL0WlsUcAwTlLH/8TqvpFu2HelYtgylQgVcSiontTj8YTORDq+sE4QdQOGQeI7441QEjCMMEJgTY3OKOJl637A==",
+  "dgSpecHash": "MnyKS7fPAdGGGmQbFb+/xdSYTNoR5Fm01m4w4YSBDbWymBXnkhbptn1aoK4Y5EV+igLajJLpgSGHOaUmEDKrDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.HttpApi\\Acme.BookStore.HttpApi.csproj",
   "expectedPackageFiles": [

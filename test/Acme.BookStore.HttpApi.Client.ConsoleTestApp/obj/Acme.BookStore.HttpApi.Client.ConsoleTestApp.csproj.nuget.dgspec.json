@@ -11,7 +11,7 @@
         "projectName": "Acme.BookStore.Application.Contracts",
         "projectPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Application.Contracts\\Acme.BookStore.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.BookStore\\src\\Acme.BookStore.Application.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -443,7 +443,7 @@
         "projectName": "Acme.BookStore.HttpApi.Client",
         "projectPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.HttpApi.Client\\Acme.BookStore.HttpApi.Client.csproj",
         "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.BookStore\\src\\Acme.BookStore.HttpApi.Client\\obj\\",
+        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.HttpApi.Client\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -641,7 +641,7 @@
         "projectName": "Acme.BookStore.HttpApi.Client.ConsoleTestApp",
         "projectPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\test\\Acme.BookStore.HttpApi.Client.ConsoleTestApp\\Acme.BookStore.HttpApi.Client.ConsoleTestApp.csproj",
         "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.BookStore\\test\\Acme.BookStore.HttpApi.Client.ConsoleTestApp\\obj\\",
+        "outputPath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\test\\Acme.BookStore.HttpApi.Client.ConsoleTestApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\NuGet.Config",

@@ -531,5 +531,5 @@ C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Web\obj\Debug\net
 C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Web\obj\Debug\net7.0\Acme.BookStore.Web.pdb
 C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Web\obj\Debug\net7.0\Acme.BookStore.Web.genruntimeconfig.cache
 C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Web\obj\Debug\net7.0\ref\Acme.BookStore.Web.dll
-C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Web\bin\Debug\net7.0\Pages\app-proxy.js
 C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.Web\bin\Debug\net7.0\Pages\Authors\Index.js
+C:\Users\Utente\source\repos\Acme.Bookstore\src\Acme.BookStore.Web\bin\Debug\net7.0\Pages\Books\app-proxy.js

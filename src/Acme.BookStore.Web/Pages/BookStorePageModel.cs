@@ -10,6 +10,6 @@ public abstract class BookStorePageModel : AbpPageModel
         LocalizationResourceType = typeof(BookStoreResource);
     }
 
-    public string AppProxyScriptPath => "~/app-proxy.js";
-    public string HomeAppProxyScriptPath => "/client-proxies/app-proxy.js";
+    public string AppProxyScriptPath => "/Pages/Books/app-proxy.js";
+    public string AuthorAppProxyScriptPath => "/Pages/Authors/app-proxy.js";
 }

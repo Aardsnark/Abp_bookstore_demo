@@ -14316,3 +14316,716 @@ PermissionRequirement: BookStore.Authors
 2023-09-25 10:07:32.021 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 6.3336ms
 2023-09-25 10:07:32.021 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
 2023-09-25 10:07:32.022 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 11.6373ms
+2023-09-26 10:31:24.156 +02:00 [INF] Starting Acme.BookStore.HttpApi.Host.
+2023-09-26 10:31:43.665 +02:00 [INF] Loaded ABP modules:
+2023-09-26 10:31:43.667 +02:00 [INF] - Acme.BookStore.BookStoreHttpApiHostModule
+2023-09-26 10:31:43.667 +02:00 [INF]   - Acme.BookStore.BookStoreHttpApiModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Acme.BookStore.BookStoreApplicationContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Acme.BookStore.BookStoreDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2023-09-26 10:31:43.667 +02:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2023-09-26 10:31:43.667 +02:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2023-09-26 10:31:43.667 +02:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-09-26 10:31:43.667 +02:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-09-26 10:31:43.667 +02:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2023-09-26 10:31:43.667 +02:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2023-09-26 10:31:43.667 +02:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2023-09-26 10:31:43.667 +02:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2023-09-26 10:31:43.667 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-09-26 10:31:43.667 +02:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-09-26 10:31:43.667 +02:00 [INF]   - Volo.Abp.DistributedLocking.AbpDistributedLockingModule
+2023-09-26 10:31:43.667 +02:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-09-26 10:31:43.667 +02:00 [INF]   - Acme.BookStore.BookStoreApplicationModule
+2023-09-26 10:31:43.667 +02:00 [INF]     - Acme.BookStore.BookStoreDomainModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2023-09-26 10:31:43.667 +02:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2023-09-26 10:31:43.667 +02:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2023-09-26 10:31:43.667 +02:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2023-09-26 10:31:43.668 +02:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2023-09-26 10:31:43.668 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2023-09-26 10:31:43.668 +02:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2023-09-26 10:31:43.668 +02:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2023-09-26 10:31:43.668 +02:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2023-09-26 10:31:43.668 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2023-09-26 10:31:43.668 +02:00 [INF]   - Acme.BookStore.EntityFrameworkCore.BookStoreEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2023-09-26 10:31:43.668 +02:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-09-26 10:31:43.668 +02:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-09-26 10:31:44.304 +02:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2023-09-26 10:31:44.323 +02:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2023-09-26 10:31:45.608 +02:00 [INF] User profile is available. Using 'C:\Users\Utente\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-26 10:31:46.491 +02:00 [INF] Initialized all ABP modules.
+2023-09-26 10:31:46.687 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-26 10:31:46.687 +02:00 [INF] Hosting environment: Development
+2023-09-26 10:31:46.687 +02:00 [INF] Content root path: C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Host
+2023-09-26 10:31:46.739 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:31:46.739 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/ - -
+2023-09-26 10:31:52.796 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:31:52.796 +02:00 [INF] Executing endpoint 'Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host)'
+2023-09-26 10:31:52.819 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Acme.BookStore.Controllers.HomeController (Acme.BookStore.HttpApi.Host).
+2023-09-26 10:31:52.829 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:31:52.882 +02:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-09-26 10:31:52.900 +02:00 [INF] Executed action Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host) in 66.779ms
+2023-09-26 10:31:52.901 +02:00 [INF] Executed endpoint 'Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host)'
+2023-09-26 10:31:52.978 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/ - - - 302 - - 6240.7303ms
+2023-09-26 10:31:52.987 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/index.html - -
+2023-09-26 10:31:53.018 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:31:53.455 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/index.html - - - 200 - text/html;charset=utf-8 462.1380ms
+2023-09-26 10:31:53.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 10:31:53.558 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/_framework/aspnetcore-browser-refresh.js - - - 200 12386 application/javascript;+charset=utf-8 29.2234ms
+2023-09-26 10:31:53.558 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/_vs/browserLink - -
+2023-09-26 10:31:53.698 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.7963ms
+2023-09-26 10:31:54.178 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2023-09-26 10:31:55.247 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:31:55.274 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:31:55.296 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:31:55.350 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1171.8338ms
+2023-09-26 10:31:55.397 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 2567.5333ms
+2023-09-26 10:31:55.398 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:31:55.399 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:31:55.417 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 8680.6238ms
+2023-09-26 10:31:55.603 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=en-GB&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:31:55.616 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:31:55.628 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:31:56.266 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:31:56.272 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 643.1552ms
+2023-09-26 10:31:56.272 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:31:56.273 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=en-GB&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 669.1971ms
+2023-09-26 10:32:03.463 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:32:03.467 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:32:03.467 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:32:03.472 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:32:03.522 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:32:03.523 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:32:03.524 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 57.1221ms
+2023-09-26 10:32:03.524 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:32:03.525 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 62.5172ms
+2023-09-26 10:32:03.529 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:32:03.530 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:32:03.530 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:32:03.534 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:32:03.535 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 4.4204ms
+2023-09-26 10:32:03.535 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:32:03.535 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 6.5038ms
+2023-09-26 10:32:59.659 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:33:00.518 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:33:00.519 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:33:00.523 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:33:00.538 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:33:00.549 +02:00 [DBG] Not found in the cache: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:33:00.559 +02:00 [DBG] Getting not cache granted permissions from the repository for this provider name,key: U,483ecb28-909a-8c4a-cb92-3a0dc9f62f2d
+2023-09-26 10:33:01.019 +02:00 [DBG] Setting the cache items. Count: 27
+2023-09-26 10:33:01.042 +02:00 [DBG] Finished setting the cache items. Count: 27
+2023-09-26 10:33:01.049 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:33:01.052 +02:00 [DBG] Not found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:33:01.054 +02:00 [DBG] Getting not cache granted permissions from the repository for this provider name,key: R,admin
+2023-09-26 10:33:01.142 +02:00 [DBG] Setting the cache items. Count: 27
+2023-09-26 10:33:01.152 +02:00 [DBG] Finished setting the cache items. Count: 27
+2023-09-26 10:33:01.169 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:33:01.177 +02:00 [DBG] Not found in the cache: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:33:01.179 +02:00 [DBG] Getting all granted permissions from the repository for this provider name,key: C,BookStore_Web
+2023-09-26 10:33:01.197 +02:00 [DBG] Setting the cache items. Count: 28
+2023-09-26 10:33:01.233 +02:00 [DBG] Finished setting the cache items. Count: 28
+2023-09-26 10:33:01.314 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:33:01.348 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:33:01.350 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:33:01.351 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:33:01.356 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 837.5439ms
+2023-09-26 10:33:01.356 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:33:01.358 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:33:01.358 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:33:01.379 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 1720.2476ms
+2023-09-26 10:33:01.407 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:33:01.411 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:33:01.412 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:33:01.415 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:33:01.417 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 5.018ms
+2023-09-26 10:33:01.417 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:33:01.417 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 10.0898ms
+2023-09-26 10:34:38.764 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:34:38.874 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:34:38.885 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:34:38.948 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:34:38.956 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:34:39.040 +02:00 [DBG] Found in the cache: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:34:39.045 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:34:39.052 +02:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:34:39.053 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:34:39.058 +02:00 [DBG] Found in the cache: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:34:39.124 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:34:39.129 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:34:39.136 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 250.5263ms
+2023-09-26 10:34:39.136 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:34:39.138 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 377.9777ms
+2023-09-26 10:34:39.177 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:34:39.180 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:34:39.181 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:34:39.199 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:34:39.201 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 20.5102ms
+2023-09-26 10:34:39.202 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:34:39.202 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 25.0413ms
+2023-09-26 10:34:48.357 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:34:48.362 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:34:48.362 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:34:48.368 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:34:48.369 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:34:48.384 +02:00 [DBG] Found in the cache: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:34:48.385 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:34:48.398 +02:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:34:48.398 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:34:48.402 +02:00 [DBG] Found in the cache: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:34:48.450 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:34:48.450 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:34:48.453 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 90.4887ms
+2023-09-26 10:34:48.453 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:34:48.453 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 96.9847ms
+2023-09-26 10:34:48.456 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:34:48.458 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:34:48.458 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:34:48.461 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:34:48.462 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 3.2491ms
+2023-09-26 10:34:48.462 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:34:48.462 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 6.1824ms
+2023-09-26 10:41:36.377 +02:00 [INF] Starting Acme.BookStore.HttpApi.Host.
+2023-09-26 10:42:09.146 +02:00 [INF] Loaded ABP modules:
+2023-09-26 10:42:09.154 +02:00 [INF] - Acme.BookStore.BookStoreHttpApiHostModule
+2023-09-26 10:42:09.155 +02:00 [INF]   - Acme.BookStore.BookStoreHttpApiModule
+2023-09-26 10:42:09.155 +02:00 [INF]     - Acme.BookStore.BookStoreApplicationContractsModule
+2023-09-26 10:42:09.155 +02:00 [INF]       - Acme.BookStore.BookStoreDomainSharedModule
+2023-09-26 10:42:09.155 +02:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2023-09-26 10:42:09.155 +02:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2023-09-26 10:42:09.155 +02:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-09-26 10:42:09.155 +02:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2023-09-26 10:42:09.155 +02:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-09-26 10:42:09.155 +02:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2023-09-26 10:42:09.155 +02:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-09-26 10:42:09.155 +02:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2023-09-26 10:42:09.155 +02:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2023-09-26 10:42:09.156 +02:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-09-26 10:42:09.156 +02:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-09-26 10:42:09.156 +02:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-09-26 10:42:09.156 +02:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2023-09-26 10:42:09.156 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2023-09-26 10:42:09.156 +02:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2023-09-26 10:42:09.156 +02:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-09-26 10:42:09.156 +02:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-09-26 10:42:09.156 +02:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2023-09-26 10:42:09.156 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2023-09-26 10:42:09.156 +02:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2023-09-26 10:42:09.156 +02:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2023-09-26 10:42:09.156 +02:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-09-26 10:42:09.157 +02:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-09-26 10:42:09.157 +02:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2023-09-26 10:42:09.157 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2023-09-26 10:42:09.157 +02:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2023-09-26 10:42:09.157 +02:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2023-09-26 10:42:09.157 +02:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2023-09-26 10:42:09.157 +02:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2023-09-26 10:42:09.157 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2023-09-26 10:42:09.157 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-09-26 10:42:09.157 +02:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2023-09-26 10:42:09.157 +02:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2023-09-26 10:42:09.157 +02:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-09-26 10:42:09.157 +02:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-09-26 10:42:09.157 +02:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2023-09-26 10:42:09.157 +02:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-09-26 10:42:09.157 +02:00 [INF]               - Volo.Abp.Caching.AbpCachingModule
+2023-09-26 10:42:09.158 +02:00 [INF]                 - Volo.Abp.Serialization.AbpSerializationModule
+2023-09-26 10:42:09.158 +02:00 [INF]               - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2023-09-26 10:42:09.158 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2023-09-26 10:42:09.158 +02:00 [INF]   - Volo.Abp.DistributedLocking.AbpDistributedLockingModule
+2023-09-26 10:42:09.158 +02:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2023-09-26 10:42:09.158 +02:00 [INF]   - Acme.BookStore.BookStoreApplicationModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Acme.BookStore.BookStoreDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2023-09-26 10:42:09.158 +02:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2023-09-26 10:42:09.158 +02:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2023-09-26 10:42:09.158 +02:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2023-09-26 10:42:09.158 +02:00 [INF]   - Acme.BookStore.EntityFrameworkCore.BookStoreEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2023-09-26 10:42:09.158 +02:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-09-26 10:42:09.158 +02:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-09-26 10:42:13.690 +02:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2023-09-26 10:42:13.737 +02:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2023-09-26 10:42:17.508 +02:00 [INF] User profile is available. Using 'C:\Users\Utente\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-26 10:42:19.550 +02:00 [INF] Initialized all ABP modules.
+2023-09-26 10:42:20.372 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-26 10:42:20.374 +02:00 [INF] Hosting environment: Development
+2023-09-26 10:42:20.375 +02:00 [INF] Content root path: C:\Users\Utente\source\repos\Acme.BookStore\src\Acme.BookStore.HttpApi.Host
+2023-09-26 10:42:20.483 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/ - -
+2023-09-26 10:42:24.419 +02:00 [INF] Executing endpoint 'Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host)'
+2023-09-26 10:42:24.566 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Acme.BookStore.Controllers.HomeController (Acme.BookStore.HttpApi.Host).
+2023-09-26 10:42:24.686 +02:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-09-26 10:42:24.704 +02:00 [INF] Executed action Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host) in 119.4889ms
+2023-09-26 10:42:24.706 +02:00 [INF] Executed endpoint 'Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host)'
+2023-09-26 10:42:24.850 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/index.html - -
+2023-09-26 10:42:24.865 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/ - - - 302 - - 4375.6719ms
+2023-09-26 10:42:25.494 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/index.html - - - 200 - text/html;charset=utf-8 642.5368ms
+2023-09-26 10:42:25.518 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 10:42:25.560 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/_framework/aspnetcore-browser-refresh.js - - - 200 12386 application/javascript;+charset=utf-8 38.5698ms
+2023-09-26 10:42:26.946 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/_vs/browserLink - -
+2023-09-26 10:42:27.037 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 90.2972ms
+2023-09-26 10:42:27.211 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2023-09-26 10:42:30.248 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3036.7598ms
+2023-09-26 10:42:50.048 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:42:51.080 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:42:51.103 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:42:51.294 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:42:51.935 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:42:51.986 +02:00 [DBG] Found in the cache: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:42:52.042 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:42:52.077 +02:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:42:52.095 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:42:52.104 +02:00 [DBG] Found in the cache: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:42:53.263 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:42:53.298 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:42:53.394 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 2290.8613ms
+2023-09-26 10:42:53.396 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:42:53.404 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 3355.9497ms
+2023-09-26 10:42:53.541 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=en-GB&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:42:53.558 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:42:53.575 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:42:53.818 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:42:53.825 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 249.8007ms
+2023-09-26 10:42:53.825 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:42:53.826 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=en-GB&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 285.1158ms
+2023-09-26 10:43:04.469 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:43:04.479 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:43:04.480 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:43:04.496 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:43:04.499 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:43:04.507 +02:00 [DBG] Found in the cache: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:43:04.509 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:43:04.516 +02:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:43:04.516 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:43:04.519 +02:00 [DBG] Found in the cache: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:43:04.572 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:43:04.573 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:43:04.575 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 94.4821ms
+2023-09-26 10:43:04.575 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:43:04.576 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 106.2781ms
+2023-09-26 10:43:04.586 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:43:04.590 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:43:04.590 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:43:04.595 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:43:04.596 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 5.6627ms
+2023-09-26 10:43:04.596 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:43:04.597 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 10.2190ms
+2023-09-26 10:45:19.361 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:45:19.390 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:45:19.394 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:45:19.414 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:45:19.417 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:45:19.431 +02:00 [DBG] Found in the cache: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:45:19.434 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:45:19.453 +02:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:45:19.453 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:45:19.457 +02:00 [DBG] Found in the cache: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:45:19.505 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:45:19.507 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:45:19.514 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 119.6942ms
+2023-09-26 10:45:19.514 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:45:19.515 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 156.1326ms
+2023-09-26 10:45:19.536 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:45:19.539 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:45:19.539 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:45:19.548 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:45:19.549 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 9.5042ms
+2023-09-26 10:45:19.549 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:45:19.550 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 13.8301ms
+2023-09-26 10:45:20.194 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/app/author?sorting=name%20asc&skipCount=0&maxResultCount=10 - -
+2023-09-26 10:45:20.212 +02:00 [INF] CORS policy execution successful.
+2023-09-26 10:45:20.216 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/app/author?sorting=name%20asc&skipCount=0&maxResultCount=10 - - - 204 - - 22.3116ms
+2023-09-26 10:45:20.219 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/app/author?sorting=name%20asc&skipCount=0&maxResultCount=10 application/json -
+2023-09-26 10:45:20.220 +02:00 [INF] CORS policy execution successful.
+2023-09-26 10:45:20.242 +02:00 [INF] Executing endpoint 'Acme.BookStore.Authors.AuthorAppService.GetListAsync (Acme.BookStore.Application)'
+2023-09-26 10:45:20.257 +02:00 [INF] Route matched with {action = "GetList", controller = "Author", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Acme.BookStore.Authors.AuthorDto]] GetListAsync(Acme.BookStore.Authors.GetAuthorListDto) on controller Acme.BookStore.Authors.AuthorAppService (Acme.BookStore.Application).
+2023-09-26 10:45:23.194 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:45:23.197 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Acme.BookStore.Authors.AuthorDto, Acme.BookStore.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-26 10:45:23.227 +02:00 [INF] Executed action Acme.BookStore.Authors.AuthorAppService.GetListAsync (Acme.BookStore.Application) in 2969.8093ms
+2023-09-26 10:45:23.227 +02:00 [INF] Executed endpoint 'Acme.BookStore.Authors.AuthorAppService.GetListAsync (Acme.BookStore.Application)'
+2023-09-26 10:45:23.228 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:45:23.229 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/app/author?sorting=name%20asc&skipCount=0&maxResultCount=10 application/json - - 200 - application/json;+charset=utf-8 3010.1732ms
+2023-09-26 10:45:28.082 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - -
+2023-09-26 10:45:28.087 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:45:28.087 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:45:28.093 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2023-09-26 10:45:28.094 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:45:28.128 +02:00 [DBG] Found in the cache: pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Roles.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpIdentity.Users.ManagePermissions,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:FeatureManagement.ManageHostFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:SettingManagement.Emailing.Test,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Update,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageFeatures,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Books.Delete,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Create,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Edit,pn:U,pk:483ecb28-909a-8c4a-cb92-3a0dc9f62f2d,n:BookStore.Authors.Delete
+2023-09-26 10:45:28.128 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:45:28.147 +02:00 [DBG] Found in the cache: pn:R,pk:admin,n:AbpIdentity.Roles,pn:R,pk:admin,n:AbpIdentity.Roles.Create,pn:R,pk:admin,n:AbpIdentity.Roles.Update,pn:R,pk:admin,n:AbpIdentity.Roles.Delete,pn:R,pk:admin,n:AbpIdentity.Roles.ManagePermissions,pn:R,pk:admin,n:AbpIdentity.Users,pn:R,pk:admin,n:AbpIdentity.Users.Create,pn:R,pk:admin,n:AbpIdentity.Users.Update,pn:R,pk:admin,n:AbpIdentity.Users.Delete,pn:R,pk:admin,n:AbpIdentity.Users.ManagePermissions,pn:R,pk:admin,n:FeatureManagement.ManageHostFeatures,pn:R,pk:admin,n:SettingManagement.Emailing,pn:R,pk:admin,n:SettingManagement.Emailing.Test,pn:R,pk:admin,n:AbpTenantManagement.Tenants,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Create,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Update,pn:R,pk:admin,n:AbpTenantManagement.Tenants.Delete,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageFeatures,pn:R,pk:admin,n:AbpTenantManagement.Tenants.ManageConnectionStrings,pn:R,pk:admin,n:BookStore.Books,pn:R,pk:admin,n:BookStore.Books.Create,pn:R,pk:admin,n:BookStore.Books.Edit,pn:R,pk:admin,n:BookStore.Books.Delete,pn:R,pk:admin,n:BookStore.Authors,pn:R,pk:admin,n:BookStore.Authors.Create,pn:R,pk:admin,n:BookStore.Authors.Edit,pn:R,pk:admin,n:BookStore.Authors.Delete
+2023-09-26 10:45:28.147 +02:00 [DBG] PermissionStore.GetCacheItemAsync: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:45:28.156 +02:00 [DBG] Found in the cache: pn:C,pk:BookStore_Web,n:AbpIdentity.UserLookup
+2023-09-26 10:45:28.199 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2023-09-26 10:45:28.200 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2023-09-26 10:45:28.204 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 116.3037ms
+2023-09-26 10:45:28.204 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:45:28.207 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - - - 200 - application/json;+charset=utf-8 124.1915ms
+2023-09-26 10:45:28.212 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - -
+2023-09-26 10:45:28.214 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:45:28.214 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2023-09-26 10:45:28.217 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2023-09-26 10:45:28.220 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 5.031ms
+2023-09-26 10:45:28.220 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2023-09-26 10:45:28.221 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44382/api/abp/application-localization?CultureName=it&OnlyDynamics=True&api-version=1.0 - - - 200 - application/json;+charset=utf-8 9.1543ms
+2023-09-26 10:45:32.347 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/app/book - -
+2023-09-26 10:45:32.348 +02:00 [INF] CORS policy execution successful.
+2023-09-26 10:45:32.350 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/app/book - - - 204 - - 2.9995ms
+2023-09-26 10:45:32.353 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/app/book application/json -
+2023-09-26 10:45:32.354 +02:00 [INF] CORS policy execution successful.
+2023-09-26 10:45:32.356 +02:00 [INF] Executing endpoint 'Acme.BookStore.Books.BookAppService.GetListAsync (Acme.BookStore.Application)'
+2023-09-26 10:45:32.363 +02:00 [INF] Route matched with {action = "GetList", controller = "Book", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Acme.BookStore.Books.BookDto]] GetListAsync(Volo.Abp.Application.Dtos.PagedAndSortedResultRequestDto) on controller Acme.BookStore.Books.BookAppService (Acme.BookStore.Application).
+2023-09-26 10:45:32.380 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44382/api/app/book?sorting=name%20asc&skipCount=0&maxResultCount=10 - -
+2023-09-26 10:45:32.381 +02:00 [INF] CORS policy execution successful.
+2023-09-26 10:45:32.388 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44382/api/app/book?sorting=name%20asc&skipCount=0&maxResultCount=10 - - - 204 - - 7.4482ms
+2023-09-26 10:45:32.400 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/api/app/book?sorting=name%20asc&skipCount=0&maxResultCount=10 application/json -
+2023-09-26 10:45:32.402 +02:00 [INF] CORS policy execution successful.
+2023-09-26 10:45:32.410 +02:00 [INF] Executing endpoint 'Acme.BookStore.Books.BookAppService.GetListAsync (Acme.BookStore.Application)'
+2023-09-26 10:45:32.410 +02:00 [INF] Route matched with {action = "GetList", controller = "Book", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Acme.BookStore.Books.BookDto]] GetListAsync(Volo.Abp.Application.Dtos.PagedAndSortedResultRequestDto) on controller Acme.BookStore.Books.BookAppService (Acme.BookStore.Application).
+2023-09-26 10:45:32.699 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: BookStore.Books
+2023-09-26 10:45:32.700 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: BookStore.Books
+2023-09-26 10:45:32.739 +02:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Volo.Authorization:010002",
+  "message": "Autorizzazione fallita! La norma data non ha concesso: BookStore.Books",
+  "details": null,
+  "data": {
+    "PolicyName": "BookStore.Books"
+  },
+  "validationErrors": null
+}
+
+2023-09-26 10:45:32.739 +02:00 [WRN] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": "Volo.Authorization:010002",
+  "message": "Autorizzazione fallita! La norma data non ha concesso: BookStore.Books",
+  "details": null,
+  "data": {
+    "PolicyName": "BookStore.Books"
+  },
+  "validationErrors": null
+}
+
+2023-09-26 10:45:32.741 +02:00 [WRN] Exception of type 'Volo.Abp.Authorization.AbpAuthorizationException' was thrown.
+Volo.Abp.Authorization.AbpAuthorizationException: Exception of type 'Volo.Abp.Authorization.AbpAuthorizationException' was thrown.
+   at Microsoft.AspNetCore.Authorization.AbpAuthorizationServiceExtensions.CheckAsync(IAuthorizationService authorizationService, String policyName)
+   at Volo.Abp.Application.Services.ApplicationService.CheckPolicyAsync(String policyName)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.Application.Services.AbstractKeyReadOnlyAppService`5.CheckGetListPolicyAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.Application.Services.AbstractKeyReadOnlyAppService`5.GetListAsync(TGetListInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method1715(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-09-26 10:45:32.741 +02:00 [WRN] Exception of type 'Volo.Abp.Authorization.AbpAuthorizationException' was thrown.
+Volo.Abp.Authorization.AbpAuthorizationException: Exception of type 'Volo.Abp.Authorization.AbpAuthorizationException' was thrown.
+   at Microsoft.AspNetCore.Authorization.AbpAuthorizationServiceExtensions.CheckAsync(IAuthorizationService authorizationService, String policyName)
+   at Volo.Abp.Application.Services.ApplicationService.CheckPolicyAsync(String policyName)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.Application.Services.AbstractKeyReadOnlyAppService`5.CheckGetListPolicyAsync()
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous(IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapter.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync(IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.Application.Services.AbstractKeyReadOnlyAppService`5.GetListAsync(TGetListInput input)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.GlobalFeatures.GlobalFeatureInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Auditing.AuditingInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Uow.UnitOfWorkInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at lambda_method1715(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-09-26 10:45:32.742 +02:00 [WRN] Code:Volo.Authorization:010002
+2023-09-26 10:45:32.742 +02:00 [WRN] Code:Volo.Authorization:010002
+2023-09-26 10:45:32.745 +02:00 [WRN] ---------- Exception Data ----------
+PolicyName = BookStore.Books
+
+2023-09-26 10:45:32.745 +02:00 [WRN] ---------- Exception Data ----------
+PolicyName = BookStore.Books
+
+2023-09-26 10:45:32.762 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-26 10:45:32.762 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-09-26 10:45:32.763 +02:00 [INF] Executed action Acme.BookStore.Books.BookAppService.GetListAsync (Acme.BookStore.Application) in 352.4946ms
+2023-09-26 10:45:32.763 +02:00 [INF] Executed action Acme.BookStore.Books.BookAppService.GetListAsync (Acme.BookStore.Application) in 399.6813ms
+2023-09-26 10:45:32.763 +02:00 [INF] Executed endpoint 'Acme.BookStore.Books.BookAppService.GetListAsync (Acme.BookStore.Application)'
+2023-09-26 10:45:32.763 +02:00 [INF] Executed endpoint 'Acme.BookStore.Books.BookAppService.GetListAsync (Acme.BookStore.Application)'
+2023-09-26 10:45:33.243 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:45:33.258 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:45:33.282 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/app/book?sorting=name%20asc&skipCount=0&maxResultCount=10 application/json - - 401 - - 881.9169ms
+2023-09-26 10:45:33.448 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:45:33.449 +02:00 [DBG] Added 0 entity changes to the current audit log
+2023-09-26 10:45:33.450 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/api/app/book application/json - - 401 - - 1096.5892ms
+2023-09-26 10:45:36.123 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/ - -
+2023-09-26 10:45:36.136 +02:00 [INF] Executing endpoint 'Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host)'
+2023-09-26 10:45:36.136 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller Acme.BookStore.Controllers.HomeController (Acme.BookStore.HttpApi.Host).
+2023-09-26 10:45:36.143 +02:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2023-09-26 10:45:36.144 +02:00 [INF] Executed action Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host) in 7.1075ms
+2023-09-26 10:45:36.144 +02:00 [INF] Executed endpoint 'Acme.BookStore.Controllers.HomeController.Index (Acme.BookStore.HttpApi.Host)'
+2023-09-26 10:45:36.146 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/ - - - 302 - - 22.3863ms
+2023-09-26 10:45:36.166 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/index.html - -
+2023-09-26 10:45:36.215 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/index.html - - - 200 - text/html;charset=utf-8 49.5066ms
+2023-09-26 10:45:36.236 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 10:45:36.238 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/_framework/aspnetcore-browser-refresh.js - - - 200 12386 application/javascript;+charset=utf-8 2.1096ms
+2023-09-26 10:45:36.257 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/_vs/browserLink - -
+2023-09-26 10:45:36.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.3918ms
+2023-09-26 10:45:36.807 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - -
+2023-09-26 10:45:36.953 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44382/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.9405ms

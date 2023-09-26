@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DhmrNVR+wTpG5DOg3p6pF056HeHQojpnV9N88M7D1e8dPxMDENgUeF1XnayVOJpG6lwshAeopFZ0J9NMWXpLIA==",
+  "dgSpecHash": "4KBXeHlddHvTcyQv2fUNL1lewt6x75nhqTqJK0wbPg8YP9GBxQtCdmDAOkErJx/MXf1T7KoA2fO7sJ1e8WVHNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\test\\Acme.BookStore.HttpApi.Client.ConsoleTestApp\\Acme.BookStore.HttpApi.Client.ConsoleTestApp.csproj",
   "expectedPackageFiles": [

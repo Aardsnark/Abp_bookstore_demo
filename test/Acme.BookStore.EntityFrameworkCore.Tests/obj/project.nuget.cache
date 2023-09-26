@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3J/ty7cybaG0FcS9ndQ1bYyqgBHpiZbPdqeGH6GU9Nba1X7s4y3j1PwDpQ430JVqCsBKvEG4e6/XBpRbinwJ5Q==",
+  "dgSpecHash": "x2rWqrrNGgwx3OwrRrRkKIeTdzXJTHdtTxNhfXf6OGlg0mJ0W/QLYl5vPbcLOUnG04bPWIqPtnkUiuzvDCIqkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\test\\Acme.BookStore.EntityFrameworkCore.Tests\\Acme.BookStore.EntityFrameworkCore.Tests.csproj",
   "expectedPackageFiles": [

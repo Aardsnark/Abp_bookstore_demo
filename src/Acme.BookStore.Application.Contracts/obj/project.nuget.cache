@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z0NpI9Ek0gjaNEbB5ZE/WoGfXnYe7NMceO/s2HaYkl/em/ZLg4EbHJFDTIQ5ZiyitwH4oV/pzL/d8UfD2kiWbw==",
+  "dgSpecHash": "y4H/+UG9YW4aoqsSzSswrZL0AW76X2JPs50LbtSWaPxisOKIxbJL5u3hqZ5m/dvS3W+LKLAuV17T4d754ktNgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.Application.Contracts\\Acme.BookStore.Application.Contracts.csproj",
   "expectedPackageFiles": [

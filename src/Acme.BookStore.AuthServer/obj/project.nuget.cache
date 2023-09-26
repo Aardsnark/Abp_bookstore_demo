@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "onLomdmPQXvwQCFB4lFuk7OYmQggvdEOoT5w8X6vp28sKnwYttt29e+hwC++yeDevY1cpXYdthvdcT9uA/kr9Q==",
+  "dgSpecHash": "ixjn80EJ5MVLWOFkd3VrlM0XwVmVhqMAfkaXZZgqEMqgYQLNmXsBZ0A5cxI/jTfg3o065u+x9Xt2/jPXHYFg+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Utente\\source\\repos\\Acme.Bookstore\\src\\Acme.BookStore.AuthServer\\Acme.BookStore.AuthServer.csproj",
   "expectedPackageFiles": [
