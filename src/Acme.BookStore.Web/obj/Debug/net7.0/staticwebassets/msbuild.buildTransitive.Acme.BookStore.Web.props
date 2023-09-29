@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Acme.BookStore.Web.props" />
-</Project>
