@@ -1,7 +1,8 @@
 ﻿using System.Threading.Tasks;
+using Acme.BookStore.Web.Pages;
 using Microsoft.AspNetCore.Authentication;
 
-namespace Acme.BookStore.Web.Pages;
+namespace Acme.BookStore.Web.Views.Home;
 
 public class IndexModel : BookStorePageModel
 {

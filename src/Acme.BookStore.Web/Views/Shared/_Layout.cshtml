@@ -1,0 +1,43 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@model Acme.BookStore.Web.Pages.BookStorePageModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Acme.BookStore.Localization
+@using Volo.Abp.Users
+@inject IHtmlLocalizer<BookStoreResource> L
+@inject ICurrentUser CurrentUser
+<!DOCTYPE html>
+	<head>
+		
+    <script src="~/js/commonModule.js" asp-append-version="true"></script>
+	<script>
+		commonModule.appBaseUrl = "@Url.Content("~/")";
+		commonModule.webApiBaseUrl = "@Configuration["BaseUrls:WebApiBaseUrl"]";
+		commonModule.webBaseUrl = "@Configuration["BaseUrls:WebBaseUrl"]";
+		console.log("commonModule: ", commonModule);
+		console.log("commonModule.webApiBaseUrl: ", commonModule.webApiBaseUrl);
+	</script>
+	<environment include="Development">
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js" asp-append-version="true"></script>
+	</environment>
+	<environment exclude="Development">
+		<script src="~/lib/Vue/vue.global.prod.js" asp-append-version="true"></script>
+	</environment>
+	@await RenderSectionAsync("headScripts", required:false)
+	</head>
+	<body>
+		
+		<div id="myApp">
+			@* <verticalmenu></verticalmenu> *@
+			@RenderBody()
+		</div>
+
+		@RenderSection("bodyScripts", required:false)
+
+		<br />
+		@if (!CurrentUser.IsAuthenticated)
+		{
+			
+			<a abp-button="Primary" href="/Account/Login"><i class="fa fa-sign-in"></i> @L["Login"]</a>
+		}
+	</body>

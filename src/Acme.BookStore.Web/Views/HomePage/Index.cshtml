@@ -1,0 +1,20 @@
+﻿@page
+@model Acme.BookStore.Web.Pages.BookStorePageModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Acme.BookStore.Localization
+@using Volo.Abp.Users
+@inject IHtmlLocalizer<BookStoreResource> L
+@inject ICurrentUser CurrentUser
+
+@* <home></home> *@
+
+@section bodyScripts {
+    
+    @* <abp-script src="/Pages/Index.js" /> *@
+    <abp-script src="/js/mainPage.js" asp-append-version="true"></abp-script>
+    <abp-script src="@Model.AppProxyScriptPath" />
+    
+}
+
+@* <div id="myApp"></div>  *@
+

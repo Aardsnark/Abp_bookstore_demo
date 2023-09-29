@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@abp/aspnetcore.mvc.ui.theme.leptonxlite": "~2.3.2",
+    "axios": "^1.5.1",
     "vuetify": "^3.3.17"
   },
   "devDependencies": {
