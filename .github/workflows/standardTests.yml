@@ -24,15 +24,16 @@ jobs:
       with:
         path: |
           ~/.nuget/packages  # Cache NuGet packages
-          **/obj  # Cache build artifacts
+          #**/obj  # Cache build artifacts
         key: ${{ runner.os }}-nuget-obj-${{ github.repository }}-${{ hashFiles('**/*.csproj') }}
         # id: cache-check
         restore-keys: |
           ${{ runner.os }}-nuget-obj-
           ${{ runner.os }}
 
-    - name: Restore Cache
-      if: steps.cache-check.outputs.cache-hit == 'true'
+    - if: steps.cache-check.outputs.cache-hit == 'true'
+      name: Restore Cache
+      continue-on-error: true
       run: echo "Cache hit, skip restore"
       
     - name: Setup .NET
