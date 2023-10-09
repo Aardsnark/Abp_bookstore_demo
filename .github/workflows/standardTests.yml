@@ -19,6 +19,7 @@ jobs:
     - uses: actions/checkout@v3
   
     - name: Check Cache
+      id: NuGet_cache
       uses: actions/cache@v3
       with:
         path: |
@@ -28,6 +29,7 @@ jobs:
         # id: cache-check
         restore-keys: |
           ${{ runner.os }}-nuget-obj-
+          ${{ runner.os }}
 
     - name: Restore Cache
       if: steps.cache-check.outputs.cache-hit == 'true'
