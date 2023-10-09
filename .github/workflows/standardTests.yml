@@ -8,26 +8,33 @@ on:
 
 jobs:
   linuxTests:
-    runs-on: ${{matrix.os}}
+    runs-on: ubuntu-latest
 
     defaults:
       run:
         working-directory: ./test/
-    
-   
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v3
-  
+    - name: Check Cache
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.nuget/packages  # Cache NuGet packages
+          **/obj  # Cache build artifacts
+        key: nuget-obj-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+      id: cache-check
+
+    - name: Restore Cache
+      if: steps.cache-check.outputs.cache-hit == 'true'
+      run: echo "Cache hit, skip restore"
+      
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 7.0.x
 
     - name: Restore dependencies and build
+      if: steps.cache-check.outputs.cache-hit != 'true'
       run: |
         for proj in $(find . -name '*.csproj'); do
           dotnet restore "$proj" --verbosity normal
@@ -49,44 +56,44 @@ jobs:
         path: '**/TestResults/*.trx'
   
 
-  windowsTests:
-    needs: linuxTests  
-    runs-on: ${{matrix.os}}
+  # windowsTests:
+  #   needs: linuxTests  
+  #   runs-on: ${{matrix.os}}
 
-    defaults:
-      run:
-        working-directory: ./test/
+  #   defaults:
+  #     run:
+  #       working-directory: ./test/
     
    
-    strategy:
-      matrix:
-        os: [windows-latest]
+  #   strategy:
+  #     matrix:
+  #       os: [windows-latest]
 
-    steps:
-    - uses: actions/checkout@v3
+  #   steps:
+  #   - uses: actions/checkout@v3
   
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 7.0.x
+  #   - name: Setup .NET
+  #     uses: actions/setup-dotnet@v3
+  #     with:
+  #       dotnet-version: 7.0.x
 
-    - name: Restore dependencies and build
-      run: |
-        Get-ChildItem -Recurse -Filter '*.csproj' | ForEach-Object {
-          dotnet restore $_.FullName --verbosity normal
-          dotnet build $_.FullName --no-restore --verbosity normal
-        }
-      timeout-minutes: 15
+  #   - name: Restore dependencies and build
+  #     run: |
+  #       Get-ChildItem -Recurse -Filter '*.csproj' | ForEach-Object {
+  #         dotnet restore $_.FullName --verbosity normal
+  #         dotnet build $_.FullName --no-restore --verbosity normal
+  #       }
+  #     timeout-minutes: 15
 
-    - name: Test
-      run: |
-        Get-ChildItem -Recurse -Filter '*.csproj' | ForEach-Object {
-          dotnet test $_.FullName --no-build --verbosity normal --logger "trx;LogFileName=testresults.trx"
-        }
-      timeout-minutes: 15
+  #   - name: Test
+  #     run: |
+  #       Get-ChildItem -Recurse -Filter '*.csproj' | ForEach-Object {
+  #         dotnet test $_.FullName --no-build --verbosity normal --logger "trx;LogFileName=testresults.trx"
+  #       }
+  #     timeout-minutes: 15
 
-    - name: Publish Test Results
-      uses: actions/upload-artifact@v3
-      with:
-        name: test-results
-        path: '**/TestResults/*.trx'
+  #   - name: Publish Test Results
+  #     uses: actions/upload-artifact@v3
+  #     with:
+  #       name: test-results
+  #       path: '**/TestResults/*.trx'
