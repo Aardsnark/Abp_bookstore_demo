@@ -18,15 +18,16 @@ jobs:
 
     - uses: actions/checkout@v3
   
+    - name: Get npm cache directory path
+      id: npm-cache-dir-path
+      run: echo "::set-output name=dir::$(npm cache dir)" 
+  
     - name: Check Cache
-      id: NuGet_cache
+      id: nuGet-cache
       uses: actions/cache@v3
       with:
-        path: |
-          ~/.nuget/packages  # Cache NuGet packages
-          #**/obj  # Cache build artifacts
+        path: ${{ steps.npm-cache-dir-path.outputs.dir }}
         key: ${{ runner.os }}-nuget-obj-${{ github.repository }}-${{ hashFiles('**/*.csproj') }}
-        # id: cache-check
         restore-keys: |
           ${{ runner.os }}-nuget-obj-
           ${{ runner.os }}
