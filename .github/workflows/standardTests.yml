@@ -15,6 +15,9 @@ jobs:
         working-directory: ./test/
 
     steps:
+
+    - uses: actions/checkout@v3
+  
     - name: Check Cache
       uses: actions/cache@v3
       with:
@@ -36,7 +39,7 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Restore dependencies and build
-      working-directory: ${{ github.workspace }}/test/
+      #working-directory: ${{ github.workspace }}/test/
       if: steps.cache-check.outputs.cache-hit != 'true'
       run: |
         for proj in $(find . -name '*.csproj'); do
