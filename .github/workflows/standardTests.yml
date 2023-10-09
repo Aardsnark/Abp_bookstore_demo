@@ -27,11 +27,12 @@ jobs:
       with:
         dotnet-version: 7.0.x
 
-    - name: Restore dependencies
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build --no-restore
+    - name: Restore dependencies and build
+      run: |
+        for proj in $(find . -name '*.csproj'); do
+          dotnet restore "$proj" --verbosity normal
+          dotnet build "$proj" --no-restore --verbosity normal
+        done
 
     - name: Test
       run: |
