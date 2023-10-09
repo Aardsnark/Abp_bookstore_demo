@@ -6,6 +6,7 @@ if (!mix.inProduction()) {
 
 mix.setPublicPath('wwwroot');
 
-mix.js('./Vue/Scripts/mainPage.js', 'js/mainPage.js').vue({ version: 3 });
+mix.js('./Scripts/Home/mainPage.js', 'js/mainPage.js').vue({ version: 3 });
 mix.js('./Vue/Scripts/books.js', 'js/Books.js').vue({ version: 3 });
 mix.js('./Vue/Scripts/authors.js', 'js/Authors.js').vue({ version: 3 });
+mix.copy('./Scripts/commonModule.js', './wwwroot/js/commonModule.js');

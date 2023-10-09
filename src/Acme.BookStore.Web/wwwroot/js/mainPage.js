@@ -26124,21 +26124,25 @@ function propsFactory(props, source) {
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!*********************************!*\
-  !*** ./Vue/Scripts/mainPage.js ***!
-  \*********************************/
+/*!**********************************!*\
+  !*** ./Scripts/Home/mainPage.js ***!
+  \**********************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var vuetify__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuetify */ "./node_modules/vuetify/lib/framework.mjs");
-/* harmony import */ var _main_page_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../main-page.vue */ "./Vue/main-page.vue");
+/* harmony import */ var _Vue_main_page_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Vue/main-page.vue */ "./Vue/main-page.vue");
  // Import createApp function from Vue 3
 
 
+//import * as proxy from "../../wwwroot/client-proxies/app-proxy.js"
 
 //would it work with multiple components?
-var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_main_page_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)(_Vue_main_page_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var vuetify = (0,vuetify__WEBPACK_IMPORTED_MODULE_2__.createVuetify)();
 app.use(vuetify);
+//app.provide("proxy", proxy);
+//app.use(abp);
+
 app.mount('#myApp');
 })();
 

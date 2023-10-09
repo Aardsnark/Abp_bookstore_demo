@@ -1,0 +1,12 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Acme.BookStore.Localization
+@using Volo.Abp.Users
+@inject IHtmlLocalizer<BookStoreResource> L
+@inject ICurrentUser CurrentUser
+
+<App></App>
+
+@section bodyScripts {
+    <script src="~/js/mainPage.js" asp-append-version="true"></script>
+}

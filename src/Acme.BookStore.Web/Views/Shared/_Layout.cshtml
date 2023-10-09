@@ -1,0 +1,36 @@
+﻿@using Acme.BookStore.Localization;
+@using Volo.Abp.Users;
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject ICurrentUser CurrentUser
+@inject IHtmlLocalizer<BookStoreResource> L
+<html>
+	<head>
+
+		<link rel="stylesheet" href="~/libs/bootstrap/css/bootstrap.css" asp-append-version="true" />
+		@* <script src="~/libs/jquery/jquery.js"></script> *@
+		@* <script src="~/libs/abp/core/abp.js"></script>
+		<script src="~/libs/abp/jquery/abp.jquery.js"></script> *@
+		<script src="~/client-proxies/app-proxy.js"></script>
+
+		@await RenderSectionAsync("headScripts", required: false)
+
+	</head>
+	<body>
+		<div style="text-align:end; margin-right:10px;">
+					@if (!CurrentUser.IsAuthenticated)
+					{
+		<a class="btn" role="button" href="/Account/Login"><i  class="fa fa-sign-in"></i> @L["Login"]</a>
+					}
+		</div>
+
+		<div  id="myApp">
+			<div class="container">
+			@RenderBody()   
+			</div>
+		</div>
+
+		@RenderSection("bodyScripts", required: false)
+	</body>
+
+
+</html>
