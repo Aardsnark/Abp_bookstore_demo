@@ -28,7 +28,7 @@ jobs:
           ${{ runner.os }}-nuget-obj-
           ${{ runner.os }}
 
-    - if: $({ steps.nuget-cache.outputs.cache-hit == 'true' })
+    - if: steps.nuget-cache.outputs.cache-hit == 'true'
       name: Restore Cache
       continue-on-error: true
       run: echo "Cache hit, skip restore"
