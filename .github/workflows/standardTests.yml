@@ -21,8 +21,10 @@ jobs:
         path: |
           ~/.nuget/packages  # Cache NuGet packages
           **/obj  # Cache build artifacts
-        key: nuget-obj-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
-      id: cache-check
+        key: ${{ runner.os }}-nuget-obj-${{ hashFiles('**/*.csproj') }}
+        id: cache-check
+        restore-keys: |
+          ${{ runner.os }}-nuget-obj-
 
     - name: Restore Cache
       if: steps.cache-check.outputs.cache-hit == 'true'
