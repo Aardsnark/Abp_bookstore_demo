@@ -16,23 +16,19 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@v3
-  
-    - name: Get npm cache directory path
-      id: npm-cache-dir-path
-      run: echo "::set-output name=dir::$(npm cache dir)" 
+    - uses: actions/checkout@v4
   
     - name: Check Cache
-      id: nuGet-cache
+      id: nuget-cache
       uses: actions/cache@v3
       with:
-        path: ${{ steps.npm-cache-dir-path.outputs.dir }}
+        path: ~/.nuget/packages
         key: ${{ runner.os }}-nuget-obj-${{ github.repository }}-${{ hashFiles('**/*.csproj') }}
         restore-keys: |
           ${{ runner.os }}-nuget-obj-
           ${{ runner.os }}
 
-    - if: steps.cache-check.outputs.cache-hit == 'true'
+    - if: $({ steps.nuget-cache.outputs.cache-hit == 'true' })
       name: Restore Cache
       continue-on-error: true
       run: echo "Cache hit, skip restore"
@@ -80,7 +76,7 @@ jobs:
   #       os: [windows-latest]
 
   #   steps:
-  #   - uses: actions/checkout@v3
+  #   - uses: actions/checkout@v4
   
   #   - name: Setup .NET
   #     uses: actions/setup-dotnet@v3
