@@ -43,7 +43,7 @@ jobs:
       timeout-minutes: 15
 
     - name: Publish Test Results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: test-results
         path: '**/TestResults/*.trx'
@@ -72,21 +72,21 @@ jobs:
 
     - name: Restore dependencies and build
       run: |
-        for proj in $(find . -name '*.csproj'); do
-            dotnet restore "$proj" --verbosity normal
-            dotnet build "$proj" --no-restore --verbosity normal
-        done
-        timeout-minutes: 15
+        Get-ChildItem -Recurse -Filter '*.csproj' | ForEach-Object {
+          dotnet restore $_.FullName --verbosity normal
+          dotnet build $_.FullName --no-restore --verbosity normal
+        }
+      timeout-minutes: 15
 
     - name: Test
       run: |
-        for proj in $(find . -name '*.csproj'); do
-            dotnet test "$proj" --no-build --verbosity normal --logger "trx;LogFileName=testresults.trx"
-        done
-        timeout-minutes: 15
+        Get-ChildItem -Recurse -Filter '*.csproj' | ForEach-Object {
+          dotnet test $_.FullName --no-build --verbosity normal --logger "trx;LogFileName=testresults.trx"
+        }
+      timeout-minutes: 15
 
     - name: Publish Test Results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: test-results
         path: '**/TestResults/*.trx'
