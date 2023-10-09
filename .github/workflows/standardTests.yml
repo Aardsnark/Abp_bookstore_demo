@@ -21,8 +21,8 @@ jobs:
         path: |
           ~/.nuget/packages  # Cache NuGet packages
           **/obj  # Cache build artifacts
-        key: ${{ runner.os }}-nuget-obj-${{ hashFiles('**/*.csproj') }}
-        id: cache-check
+        key: ${{ runner.os }}-nuget-obj-${{ github.repository }}-${{ hashFiles('**/*.csproj') }}
+        # id: cache-check
         restore-keys: |
           ${{ runner.os }}-nuget-obj-
 
@@ -36,6 +36,7 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Restore dependencies and build
+      working-directory: ${{ github.workspace }}/test/
       if: steps.cache-check.outputs.cache-hit != 'true'
       run: |
         for proj in $(find . -name '*.csproj'); do
